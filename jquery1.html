@@ -4,13 +4,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="jquery1.js"></script>
 <style>
-#div {
-    width: 300px;
-    height: 200px;
-    padding: 20px;
-    margin: 20px;
-    border: 5px dotted cyan;
-    background-color: silver;
+.ancestors * { 
+  display: block;
+  border: 2px solid lightgrey;
+  color: lightgrey;
+  padding: 5px;
+  margin: 15px;
 }
 </style>
 
@@ -41,16 +40,35 @@
         </div> -->
         <!-- <button id="btn1">Remove</button>
         <button id="btn2">Empty</button> -->
-
+<!-- 
         <div id="div">
 
-        </div>
+        </div> -->
 
         <!-- <p style="background-color:cyan;">This is painted in whateve</p>
         <p style="background-color: blue;">This is painted in whatever</p>
         <p style="background-color: yellow;">This is painted in whatever</p> -->
         <button id="btn1">Button</button> 
         <!-- <button id="btn2">style you!</button> -->
+
+        <div class="ancestors">
+            <div style="width: 500px;" >
+                <ul>(great-great grandpa)
+                    <li>parent
+                        <span >span</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div style="width: 500px;">div (Grandparent)
+                <p>p direct
+              
+                </p>
+                <span>wow!</span>
+            </div>
+
+
+        </div>
         
     </body>
 </html>

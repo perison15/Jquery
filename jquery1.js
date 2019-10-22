@@ -109,15 +109,19 @@
 
 //WIDTH AND HEIGHT OF THE DOCUMENT AND WINDOW
 
-$(function() {
-    $("#btn1").click(function() {
-        var txt = "";
-        txt+="The document dimensions are: "+$(document).width();
-        txt+="x"+$(document).height()+"<br>";
-        txt+="The Window dimensions are: "+$(window).width();
-        txt+="x"+$(window).height()+"\n";
-        $("div").html(txt);
-        $("div").width(500).height(500);
-    });
+// $(function() {
+//     $("#btn1").click(function() {
+//         var txt = "";
+//         txt+="The document dimensions are: "+$(document).width();
+//         txt+="x"+$(document).height()+"<br>";
+//         txt+="The Window dimensions are: "+$(window).width();
+//         txt+="x"+$(window).height()+"\n";
+//         $("div").html(txt);
+//         $("div").width(500).height(500);
+//     });
     
-})
+// })
+
+$(function() {
+    $("p").next().css({"color":"red","border":"5px solid red"});
+});
